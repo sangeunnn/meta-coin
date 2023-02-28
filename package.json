@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/sangeunnn/meta-coin#readme",
   "dependencies": {
+    "solc": "^0.8.0",
     "web3": "^1.8.2"
   }
 }

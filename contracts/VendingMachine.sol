@@ -1,10 +1,12 @@
+pragma solidity >=0.4.25 <0.9.0;
+
 contract VendingMachine {
     event Purchase(address indexed purchaser, uint256 amount);
 
     address public owner;
     mapping(address => uint) public cupcakeBalances;
 
-    constructor() {
+    constructor() public {
         owner = msg.sender;
         cupcakeBalances[address(this)] = 100;
     }
